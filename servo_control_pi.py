@@ -8,7 +8,7 @@ GPIO.setup(servoPIN, GPIO.OUT)
 p = GPIO.PWM(servoPIN, 50) # GPIO 22, PWM 50Hz
 p.start(0) # Inicjalizacja
 try:
-  p.ChangeDutyCycle(5) #duty 2-12 dla kątów 0-180
+  p.ChangeDutyCycle(5) #duty 2-12 dla katow 0-180
   time.sleep(0.5)
 except KeyboardInterrupt:
   p.stop()
